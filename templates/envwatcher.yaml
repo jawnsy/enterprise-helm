@@ -54,8 +54,6 @@ spec:
               value: {{ .Values.logging.json | quote }}
             - name: STACKDRIVER_LOG
               value: {{ .Values.logging.stackdriver | quote }}
-            - name: ENVBUILDER_IMAGE
-              value: {{ .Values.envbuilder.image | quote }}
             - name: DOCKERD_IMAGE
               value: {{ .Values.dockerd.image | quote}}
             - name: ENVIRONMENT_SERVICE_ACCOUNT
